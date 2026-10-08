@@ -3,6 +3,7 @@
   "profile": "PUBLIC",
   "algorithm": "sha256",
   "files": {
+    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
     ".gitignore": "2db9fdec866495ff8e19079821658e9bceb855d487da24a22bf8cbfc727d0331",
     "agents/openai.yaml": "e50791a316c76a90faa9e11782ed98e9c6f194eb91e1cf8908bf4fff5d1a403e",
     "assets/font-system/font-face.css": "2a478c69ef6d6198a8232192b6d695324909637da78401d771b146ea389ddfec",
