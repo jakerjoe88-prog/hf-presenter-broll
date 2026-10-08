@@ -14,7 +14,7 @@
 
 ## 安装
 
-下载本仓库ZIP并解压，将包含SKILL.md的整个目录命名为`hf-presenter-broll`，放入Agent的技能目录。不要多嵌套一层文件夹。
+下载[公开安装包](https://github.com/jakerjoe88-prog/hf-presenter-broll/releases/latest/download/hf-presenter-broll-v1.5.0-public.zip)并解压，将包含SKILL.md的整个目录命名为`hf-presenter-broll`，放入Agent的技能目录。也可通过仓库页面的Code → Download ZIP获取源码。不要多嵌套一层文件夹。
 
 Codex：放入自定义CODEX_HOME下的skills目录；未自定义时放入用户目录的`.codex/skills/`。刷新或重开会话，调用`$hf-presenter-broll`。
 
