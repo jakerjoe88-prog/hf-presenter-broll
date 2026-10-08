@@ -1,0 +1,14 @@
+{
+  "schema_version": "hf-presenter-style-registry-1.0",
+  "default_policy": "SMART_MATCH",
+  "talking_head_default": "presenter-evidence-cinematic-broll",
+  "styles": [
+    {"id":"presenter-evidence-cinematic-broll","status":"DEFAULT_TALKING_HEAD","aliases":["真人主讲","证据叠加","场景化B-roll","参考片风格"],"guide":"presenter-evidence-cinematic-broll.md"},
+    {"id":"editorial-data-report","status":"SELECTABLE","aliases":["默认风格","数据简报","发布会数据报告","数据可视化"],"guide":"editorial-data-report.md"},
+    {"id":"apple-clean-product","status":"SELECTABLE","aliases":["苹果风格","Apple风格","清爽产品发布风"],"guide":"apple-clean-product.md"},
+    {"id":"financial-terminal-tech","status":"SELECTABLE","aliases":["金融终端","K线科技风","高精度K线数据运镜"],"guide":"financial-terminal-tech.md"},
+    {"id":"magazine-collage-cards","status":"SELECTABLE","aliases":["杂志拼贴","纸张质感卡片","动效卡片效果库"],"guide":"magazine-collage-cards.md"},
+    {"id":"monochrome-cyber-editorial-cards","status":"SELECTABLE","aliases":["黑白赛博","赛博UI卡片","Klexna风格"],"guide":"monochrome-cyber-editorial-cards.md"},
+    {"id":"data-hud-narration","status":"EXPLICIT_ONLY","aliases":["深色HUD","数据面板口播","talking-head HUD"],"guide":"data-hud-narration.md"}
+  ]
+}

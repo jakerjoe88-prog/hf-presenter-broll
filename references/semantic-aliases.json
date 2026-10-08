@@ -1,0 +1,797 @@
+{
+  "schema_version": "1.0",
+  "description": "Curated Chinese intent aliases for deterministic candidate retrieval. These boosts do not replace the routing contract or final model judgment.",
+  "routes": [
+    {
+      "id": "source_convergence",
+      "triggers": [
+        "多个来源",
+        "多种来源",
+        "不同来源",
+        "多个信息源",
+        "各种信息",
+        "统一入口",
+        "集中入口",
+        "汇成一个",
+        "汇总到一个",
+        "合并成一个",
+        "最后汇成",
+        "整合到一起",
+        "集中到一起"
+      ],
+      "targets": [
+        "bezier-source-converge-merge",
+        "integration-hub-map"
+      ]
+    },
+    {
+      "id": "before_after",
+      "triggers": [
+        "前后对比",
+        "处理前后",
+        "改造前后",
+        "升级前后",
+        "原来现在",
+        "之前之后",
+        "从混乱到整齐",
+        "效果对比"
+      ],
+      "targets": [
+        "before-after-slider-scrub",
+        "card-flip-reveal"
+      ]
+    },
+    {
+      "id": "ai_answer_with_evidence",
+      "triggers": [
+        "生成答案",
+        "给出答案",
+        "答案证据",
+        "证据随后",
+        "引用来源",
+        "引用证据",
+        "检索证据",
+        "任务完成",
+        "ai正在工作",
+        "ai 在工作"
+      ],
+      "targets": [
+        "ai-stream-response",
+        "research-card-stack-scroll"
+      ]
+    },
+    {
+      "id": "growth_and_metrics",
+      "triggers": [
+        "持续增长",
+        "快速增长",
+        "实时增长",
+        "数据增长",
+        "销量增长",
+        "用户增长",
+        "流量增长",
+        "增长趋势",
+        "数据上涨",
+        "一路上涨",
+        "翻了几倍",
+        "指标增长",
+        "实时数据",
+        "数字跳升"
+      ],
+      "targets": [
+        "chart-live-moves",
+        "odometer-digit-roll",
+        "counter-confetti"
+      ]
+    },
+    {
+      "id": "general_data_decline",
+      "triggers": [
+        "数据下降",
+        "持续下降",
+        "快速下跌",
+        "用户减少",
+        "销量下滑",
+        "流量下降",
+        "转化率降低",
+        "库存减少",
+        "表现变差"
+      ],
+      "targets": [
+        "chart-live-moves",
+        "gauge-readout-moves",
+        "before-after-slider-scrub"
+      ]
+    },
+    {
+      "id": "general_live_data_write",
+      "triggers": [
+        "实时更新",
+        "持续写入",
+        "数据不断变化",
+        "新增数据",
+        "实时监控",
+        "每秒变化",
+        "动态曲线",
+        "最新数据"
+      ],
+      "targets": [
+        "chart-live-moves",
+        "gauge-readout-moves",
+        "timeline-travel"
+      ]
+    },
+    {
+      "id": "general_threshold_breach",
+      "triggers": [
+        "突破阈值",
+        "突破目标",
+        "突破原有目标",
+        "超过目标",
+        "超过上限",
+        "跌破下限",
+        "冲破记录",
+        "突破历史",
+        "超过预期",
+        "越过警戒线"
+      ],
+      "targets": [
+        "chart-live-moves",
+        "crash-zoom-punch",
+        "gauge-readout-moves"
+      ]
+    },
+    {
+      "id": "general_momentum_change",
+      "triggers": [
+        "增长加速",
+        "增长放缓",
+        "速度变快",
+        "速度变慢",
+        "动能增强",
+        "动能减弱",
+        "趋势开始变缓",
+        "变化幅度缩小"
+      ],
+      "targets": [
+        "chart-live-moves",
+        "graze-face-tour",
+        "gauge-readout-moves"
+      ]
+    },
+    {
+      "id": "general_peak_pullback",
+      "triggers": [
+        "达到高点后回落",
+        "冲高回落",
+        "从峰值下降",
+        "高点回撤",
+        "快速增长后下降",
+        "先涨后跌",
+        "到顶后回落"
+      ],
+      "targets": [
+        "chart-live-moves",
+        "graze-face-tour",
+        "before-after-slider-scrub"
+      ]
+    },
+    {
+      "id": "general_signal_hit",
+      "triggers": [
+        "预警出现",
+        "提示出现",
+        "信号触发",
+        "达到目标",
+        "关键节点出现",
+        "异常被发现",
+        "风险提示",
+        "状态变红"
+      ],
+      "targets": [
+        "crash-zoom-punch",
+        "scanline-annotate-focus",
+        "gauge-readout-moves"
+      ]
+    },
+    {
+      "id": "general_data_roi_tour",
+      "triggers": [
+        "观察几个数据区域",
+        "从总量看到明细",
+        "查看不同指标",
+        "沿着数据阅读",
+        "从趋势看到原因",
+        "逐个查看指标",
+        "数据区域巡览"
+      ],
+      "targets": [
+        "graze-face-tour",
+        "cursor-flyover",
+        "scroll-brake-moves"
+      ]
+    },
+    {
+      "id": "general_axis_rescale",
+      "triggers": [
+        "数据超出范围",
+        "超过原有量程",
+        "重新调整范围",
+        "坐标范围变化",
+        "自动扩大量程",
+        "图表重新缩放"
+      ],
+      "targets": [
+        "chart-live-moves",
+        "graze-face-tour"
+      ]
+    },
+    {
+      "id": "financial_breakout_axis",
+      "triggers": [
+        "K线突破",
+        "k线突破",
+        "价格突破",
+        "突破区间",
+        "突破旧区间",
+        "冲出区间",
+        "冲出视口",
+        "坐标轴重标",
+        "坐标轴重算",
+        "创新高",
+        "快速扩张"
+      ],
+      "targets": [
+        "chart-live-moves",
+        "crash-zoom-punch",
+        "graze-face-tour"
+      ]
+    },
+    {
+      "id": "financial_roi_tour",
+      "triggers": [
+        "K线图",
+        "k线图",
+        "蜡烛图",
+        "图表巡游",
+        "沿着图表",
+        "观察动能",
+        "指标区域",
+        "多个图表区域",
+        "从价格到指标",
+        "持续运镜",
+        "价格和指标联动"
+      ],
+      "targets": [
+        "graze-face-tour",
+        "crash-zoom-punch",
+        "chart-live-moves"
+      ]
+    },
+    {
+      "id": "financial_signal_hit",
+      "triggers": [
+        "动能衰减",
+        "动能走弱",
+        "红色下三角",
+        "绿色上三角",
+        "三角信号",
+        "信号出现",
+        "利润回吐",
+        "放大重点",
+        "局部放大",
+        "猛推镜头"
+      ],
+      "targets": [
+        "crash-zoom-punch",
+        "chart-live-moves",
+        "graze-face-tour"
+      ]
+    },
+    {
+      "id": "financial_momentum_divergence",
+      "triggers": [
+        "价格上涨但动能下降",
+        "价格上涨但动能走弱",
+        "价格创新高但指标走弱",
+        "量价背离",
+        "动能背离",
+        "指标斜率变缓",
+        "上涨推动力减弱"
+      ],
+      "targets": [
+        "chart-live-moves",
+        "graze-face-tour",
+        "crash-zoom-punch"
+      ]
+    },
+    {
+      "id": "cause_to_result",
+      "triggers": [
+        "因为所以",
+        "因果关系",
+        "导致结果",
+        "最终导致",
+        "从原因到结果",
+        "带来变化",
+        "造成影响",
+        "输入变成输出"
+      ],
+      "targets": [
+        "integration-hub-map",
+        "bezier-source-converge-merge",
+        "ai-stream-response"
+      ]
+    },
+    {
+      "id": "replace_and_shift",
+      "triggers": [
+        "替代旧方案",
+        "替换原来",
+        "被新的取代",
+        "覆盖旧内容",
+        "推开旧内容",
+        "从旧到新",
+        "方案切换",
+        "状态切换"
+      ],
+      "targets": [
+        "bottom-push-stack-wipe",
+        "card-flip-reveal",
+        "theme-switch-moves"
+      ]
+    },
+    {
+      "id": "evidence_reveal",
+      "triggers": [
+        "证据揭示",
+        "证据逐层展开",
+        "展示证据",
+        "研究报告",
+        "论文证据",
+        "引用文档",
+        "逐条证据",
+        "报告堆叠"
+      ],
+      "targets": [
+        "research-card-stack-scroll",
+        "scroll-brake-moves",
+        "document-typewriter-reveal"
+      ]
+    },
+    {
+      "id": "number_impact",
+      "triggers": [
+        "数字冲击",
+        "数字跳变",
+        "数字滚动",
+        "从0涨到",
+        "从零涨到",
+        "增长到",
+        "达到百分之",
+        "金额变化",
+        "计数增长"
+      ],
+      "targets": [
+        "odometer-digit-roll",
+        "counter-confetti",
+        "gauge-readout-moves"
+      ]
+    },
+    {
+      "id": "comparison_shift",
+      "triggers": [
+        "两种方案对比",
+        "左右对比",
+        "优劣对比",
+        "差异对比",
+        "对比切换",
+        "新旧对照",
+        "A和B",
+        "a和b"
+      ],
+      "targets": [
+        "before-after-slider-scrub",
+        "quad-split-parallel-scenes",
+        "card-flip-reveal"
+      ]
+    },
+    {
+      "id": "process_chain",
+      "triggers": [
+        "流程链路",
+        "完整流程",
+        "从输入到输出",
+        "一步接一步",
+        "逐步处理",
+        "依次完成",
+        "处理链路",
+        "工作流演示"
+      ],
+      "targets": [
+        "beat-step-list-theme-cycle",
+        "list-reveal",
+        "bezier-source-converge-merge"
+      ]
+    },
+    {
+      "id": "ui_walkthrough",
+      "triggers": [
+        "界面操作演示",
+        "手机界面操作",
+        "网页操作",
+        "点击以后",
+        "输入以后",
+        "选择选项",
+        "打开面板",
+        "操作流程"
+      ],
+      "targets": [
+        "input-trigger-moves",
+        "type-and-filter",
+        "command-palette-summon"
+      ]
+    },
+    {
+      "id": "reading_focus",
+      "triggers": [
+        "局部阅读",
+        "聚焦细节",
+        "看清这个区域",
+        "沿着页面阅读",
+        "逐段查看",
+        "阅读重点",
+        "放大查看"
+      ],
+      "targets": [
+        "graze-face-tour",
+        "scroll-brake-moves",
+        "scanline-annotate-focus"
+      ]
+    },
+    {
+      "id": "opening_hook",
+      "triggers": [
+        "开场钩子",
+        "开头冲击",
+        "开场展示",
+        "数据开场",
+        "产品开场",
+        "第一秒抓人"
+      ],
+      "targets": [
+        "dataviz-landscape-open",
+        "spotlight-hero-card",
+        "crane-rise-reveal"
+      ]
+    },
+    {
+      "id": "conclusion_lock",
+      "triggers": [
+        "结论定格",
+        "最后结论",
+        "核心结论",
+        "一句话总结",
+        "最终答案",
+        "收束观点",
+        "结尾金句"
+      ],
+      "targets": [
+        "title-demote-to-label",
+        "marker-underline-title",
+        "ui-to-brand-morph"
+      ]
+    },
+    {
+      "id": "timeline_progression",
+      "triggers": [
+        "时间线",
+        "发展历程",
+        "几个阶段",
+        "三个阶段",
+        "四个阶段",
+        "从过去到现在",
+        "逐年变化",
+        "演进过程"
+      ],
+      "targets": [
+        "timeline-travel",
+        "beat-step-list-theme-cycle"
+      ]
+    },
+    {
+      "id": "ordered_steps",
+      "triggers": [
+        "操作步骤",
+        "几个步骤",
+        "三步完成",
+        "四步完成",
+        "第一步",
+        "第二步",
+        "按顺序",
+        "流程拆解",
+        "逐步完成"
+      ],
+      "targets": [
+        "list-reveal",
+        "beat-step-list-theme-cycle"
+      ]
+    },
+    {
+      "id": "keyword_emphasis",
+      "triggers": [
+        "关键词强调",
+        "强调这个词",
+        "重点词",
+        "划重点",
+        "核心关键词",
+        "一句话重点"
+      ],
+      "targets": [
+        "marker-underline-title",
+        "gradient-word-sweep"
+      ]
+    },
+    {
+      "id": "search_and_filter",
+      "triggers": [
+        "搜索筛选",
+        "输入关键词",
+        "筛选结果",
+        "搜索结果变化",
+        "边输入边筛选",
+        "条件过滤"
+      ],
+      "targets": [
+        "type-and-filter",
+        "command-palette-summon"
+      ]
+    },
+    {
+      "id": "collaboration",
+      "triggers": [
+        "多人协作",
+        "同时编辑",
+        "协同编辑",
+        "团队一起",
+        "实时协作",
+        "共同修改"
+      ],
+      "targets": [
+        "collab-cursor-moves",
+        "avatar-grid-radial-build-colorize"
+      ]
+    },
+    {
+      "id": "loading_to_result",
+      "triggers": [
+        "加载完成",
+        "从加载到完成",
+        "骨架屏",
+        "内容逐步加载",
+        "页面生成出来",
+        "结果逐步出现"
+      ],
+      "targets": [
+        "skeleton-reveal",
+        "product-card-progressive-assemble"
+      ]
+    },
+    {
+      "id": "voice_input",
+      "triggers": [
+        "语音输入",
+        "正在说话",
+        "声音波形",
+        "实时转写",
+        "边说边打字",
+        "语音转文字"
+      ],
+      "targets": [
+        "voice-waveform-live",
+        "glass-pill-dictation-typing"
+      ]
+    },
+    {
+      "id": "ui_to_brand_outro",
+      "triggers": [
+        "界面收成logo",
+        "界面收成 logo",
+        "收成品牌logo",
+        "收成品牌 logo",
+        "产品界面收尾",
+        "最后露出品牌",
+        "最后出现logo",
+        "最后出现 logo",
+        "品牌收尾"
+      ],
+      "targets": [
+        "ui-to-brand-morph",
+        "logo-shrink-wordmark-lockup"
+      ]
+    },
+    {
+      "id": "message_send_handoff",
+      "triggers": [
+        "发送消息",
+        "把消息发送",
+        "发给另一个人",
+        "发送给对方",
+        "邀请对方",
+        "分享给朋友",
+        "从一个人传给另一个人"
+      ],
+      "targets": [
+        "paper-plane-messenger",
+        "chip-lift-to-user-pill",
+        "collab-cursor-moves"
+      ]
+    },
+    {
+      "id": "presenter_document-tour",
+      "triggers": [
+        "证据",
+        "论文",
+        "原文",
+        "来源",
+        "报告",
+        "这段话"
+      ],
+      "targets": [
+        "scroll-brake-moves",
+        "scanline-annotate-focus"
+      ]
+    },
+    {
+      "id": "presenter_materials-to-result",
+      "triggers": [
+        "脚本",
+        "资料",
+        "工作区",
+        "整理",
+        "汇聚",
+        "教程",
+        "形成结果",
+        "输入"
+      ],
+      "targets": [
+        "bezier-source-converge-merge",
+        "input-trigger-moves",
+        "ai-stream-response"
+      ]
+    },
+    {
+      "id": "presenter_paired-comparison",
+      "triggers": [
+        "对比",
+        "之前",
+        "之后",
+        "改造",
+        "区别",
+        "前后"
+      ],
+      "targets": [
+        "before-after-slider-scrub",
+        "card-flip-reveal"
+      ]
+    },
+    {
+      "id": "presenter_pick-one",
+      "triggers": [
+        "筛选",
+        "选择",
+        "选中",
+        "挑选",
+        "最合适",
+        "留下"
+      ],
+      "targets": [
+        "type-and-filter",
+        "graze-face-tour"
+      ]
+    },
+    {
+      "id": "presenter_operation-and-comment",
+      "triggers": [
+        "点击",
+        "按钮",
+        "操作",
+        "界面",
+        "打开",
+        "录屏"
+      ],
+      "targets": [
+        "cursor-flyover",
+        "scan-bracket-sweep"
+      ]
+    },
+    {
+      "id": "presenter_step-chain",
+      "triggers": [
+        "先",
+        "然后",
+        "最后",
+        "步骤",
+        "流程",
+        "依次"
+      ],
+      "targets": [
+        "input-trigger-moves",
+        "line-carry-transition"
+      ]
+    },
+    {
+      "id": "presenter_number-with-proof",
+      "triggers": [
+        "增长",
+        "下降",
+        "百分比",
+        "数据",
+        "金额",
+        "积分",
+        "翻倍"
+      ],
+      "targets": [
+        "chart-live-moves",
+        "odometer-digit-roll"
+      ]
+    },
+    {
+      "id": "presenter_detail-context",
+      "triggers": [
+        "细节",
+        "局部",
+        "放大",
+        "这一处",
+        "全貌"
+      ],
+      "targets": [
+        "graze-face-tour",
+        "depth-layer-moves"
+      ]
+    },
+    {
+      "id": "presenter_replace-object",
+      "triggers": [
+        "替代",
+        "换成",
+        "代替",
+        "取代",
+        "改成"
+      ],
+      "targets": [
+        "bottom-push-stack-wipe",
+        "morph-from-primitive"
+      ]
+    },
+    {
+      "id": "presenter_parallel-branches",
+      "triggers": [
+        "分别",
+        "多种",
+        "同时",
+        "分成",
+        "拆分",
+        "多个版本"
+      ],
+      "targets": [
+        "integration-hub-map",
+        "product-card-progressive-assemble"
+      ]
+    },
+    {
+      "id": "presenter_focus-transfer",
+      "triggers": [
+        "重点",
+        "转向",
+        "另一方面",
+        "再看",
+        "关注"
+      ],
+      "targets": [
+        "scanline-annotate-focus",
+        "shot-transitions"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "schema_version": "1.0",
+  "recipes": [
+    {
+      "id": "document-tour",
+      "title": "证据逐处阅读",
+      "triggers": [
+        "证据",
+        "论文",
+        "原文",
+        "来源",
+        "报告",
+        "这段话"
+      ],
+      "shotcraft_candidates": [
+        "scroll-brake-moves",
+        "scanline-annotate-focus"
+      ],
+      "carrier": "真实文档或网页，保留来源、单位和适用条件",
+      "sequence": [
+        "先显示来源与局部上下文",
+        "沿文档坐标移动到目标段",
+        "关键词处圈选并提取短引文",
+        "回到上下文或交还真人"
+      ],
+      "optimization": "段落ROI必须绑定原文坐标；缩放后标注同步变换",
+      "generation_rule": "摄影内容不能替代真实证据",
+      "status": "DESIGN_RECIPE",
+      "hf_adaptation_status": "NOT_IMPLEMENTED",
+      "origin": "Project-authored planning; no Talkcraft implementation bundled"
+    },
+    {
+      "id": "materials-to-result",
+      "title": "资料进入工作区形成结果",
+      "triggers": [
+        "脚本",
+        "资料",
+        "工作区",
+        "整理",
+        "汇聚",
+        "教程",
+        "形成结果",
+        "输入"
+      ],
+      "shotcraft_candidates": [
+        "bezier-source-converge-merge",
+        "input-trigger-moves",
+        "ai-stream-response"
+      ],
+      "carrier": "真实资料、实际输入区和结果文件或播放器",
+      "sequence": [
+        "资料依次被选择",
+        "选中内容进入实际工作区",
+        "操作状态变化并出现结果",
+        "结果展开为教程或文件并保留来源"
+      ],
+      "optimization": "输入与输出使用同一对象标识；结果不得先于结果词出现",
+      "generation_rule": "可生成环境或物件照片，不生成假的操作成功证据",
+      "status": "DESIGN_RECIPE",
+      "hf_adaptation_status": "NOT_IMPLEMENTED",
+      "origin": "Project-authored planning; no Talkcraft implementation bundled"
+    },
+    {
+      "id": "paired-comparison",
+      "title": "同条件前后对比",
+      "triggers": [
+        "对比",
+        "之前",
+        "之后",
+        "改造",
+        "区别",
+        "前后"
+      ],
+      "shotcraft_candidates": [
+        "before-after-slider-scrub",
+        "card-flip-reveal"
+      ],
+      "carrier": "同对象、同尺度的前后真实素材",
+      "sequence": [
+        "建立共同参照",
+        "展示前状态的问题区域",
+        "沿对比词揭示后状态",
+        "保留差异与必要条件供阅读"
+      ],
+      "optimization": "统一尺度与裁切；需要同时阅读时不虚化任一侧",
+      "generation_rule": "缺少后状态时只能做明确标记的概念示意",
+      "status": "DESIGN_RECIPE",
+      "hf_adaptation_status": "NOT_IMPLEMENTED",
+      "origin": "Project-authored planning; no Talkcraft implementation bundled"
+    },
+    {
+      "id": "pick-one",
+      "title": "多项筛选后聚焦",
+      "triggers": [
+        "筛选",
+        "选择",
+        "选中",
+        "挑选",
+        "最合适",
+        "留下"
+      ],
+      "shotcraft_candidates": [
+        "type-and-filter",
+        "graze-face-tour"
+      ],
+      "carrier": "真实候选缩略图与可核验筛选条件",
+      "sequence": [
+        "候选依次建立",
+        "条件出现并淘汰不符项",
+        "选中对象扩展到主要阅读区",
+        "其余对象退为上下文"
+      ],
+      "optimization": "先出现筛选依据再选中；不把美观当真实排名",
+      "generation_rule": "候选图片可生成但须标明示意，不能假冒实测结果",
+      "status": "DESIGN_RECIPE",
+      "hf_adaptation_status": "NOT_IMPLEMENTED",
+      "origin": "Project-authored planning; no Talkcraft implementation bundled"
+    },
+    {
+      "id": "operation-and-comment",
+      "title": "操作主导与侧边讲解",
+      "triggers": [
+        "点击",
+        "按钮",
+        "操作",
+        "界面",
+        "打开",
+        "录屏"
+      ],
+      "shotcraft_candidates": [
+        "cursor-flyover",
+        "scan-bracket-sweep"
+      ],
+      "carrier": "真实录屏，必要时明确标记的原生重建界面",
+      "sequence": [
+        "定位实际操作按钮",
+        "光标执行与源录屏一致的动作",
+        "结果区域接棒并局部放大",
+        "侧边解释收束且露出操作上下文"
+      ],
+      "optimization": "分屏比例由关键文字大小决定；不能固定六四分屏挤坏UI",
+      "generation_rule": "仅生成界面里的内容照片，控件和中文单独实现",
+      "status": "DESIGN_RECIPE",
+      "hf_adaptation_status": "NOT_IMPLEMENTED",
+      "origin": "Project-authored planning; no Talkcraft implementation bundled"
+    },
+    {
+      "id": "presenter-handoff",
+      "title": "真人让位与回归",
+      "triggers": [
+        "演示",
+        "接下来",
+        "看这里",
+        "展开",
+        "总结",
+        "回到"
+      ],
+      "shotcraft_candidates": [],
+      "carrier": "用户原片真人与待展示的真实内容",
+      "sequence": [
+        "锁定完整头肩安全区",
+        "人物连续让位且内容建立",
+        "讲解结束收拢内容",
+        "人物回到主导位置"
+      ],
+      "optimization": "人物轨迹避开证据与字幕；先松开蒙版再回归，人物移动不计Shotcraft覆盖",
+      "generation_rule": "不生成用户替身或伪造口型",
+      "status": "DESIGN_RECIPE",
+      "hf_adaptation_status": "NOT_IMPLEMENTED",
+      "origin": "Project-authored planning; no Talkcraft implementation bundled"
+    },
+    {
+      "id": "step-chain",
+      "title": "步骤接续与产物传递",
+      "triggers": [
+        "先",
+        "然后",
+        "最后",
+        "步骤",
+        "流程",
+        "依次"
+      ],
+      "shotcraft_candidates": [
+        "input-trigger-moves",
+        "line-carry-transition"
+      ],
+      "carrier": "每一步实际输入、操作状态、输出对象",
+      "sequence": [
+        "建立第一步输入",
+        "产物传给下一步且状态改变",
+        "最后一步形成成果",
+        "收束为可读流程并交接"
+      ],
+      "optimization": "至少两次对象或关系变化；连线不能代替操作内容",
+      "generation_rule": "缺少操作证据可用清楚标记的原生流程示意",
+      "status": "DESIGN_RECIPE",
+      "hf_adaptation_status": "NOT_IMPLEMENTED",
+      "origin": "Project-authored planning; no Talkcraft implementation bundled"
+    },
+    {
+      "id": "number-with-proof",
+      "title": "数字变化与证据落点",
+      "triggers": [
+        "增长",
+        "下降",
+        "百分比",
+        "数据",
+        "金额",
+        "积分",
+        "翻倍"
+      ],
+      "shotcraft_candidates": [
+        "chart-live-moves",
+        "odometer-digit-roll"
+      ],
+      "carrier": "带单位、基准、时间窗和来源的真实数值",
+      "sequence": [
+        "建立基准与单位",
+        "按真实序列或标记示意的过渡变化",
+        "数值词处击中真实终值",
+        "补齐条件与来源供阅读"
+      ],
+      "optimization": "没有过程数据不伪造曲线；积分现金额度分开",
+      "generation_rule": "禁止生成成绩截图；数字原生排版",
+      "status": "DESIGN_RECIPE",
+      "hf_adaptation_status": "NOT_IMPLEMENTED",
+      "origin": "Project-authored planning; no Talkcraft implementation bundled"
+    },
+    {
+      "id": "detail-context",
+      "title": "整体到细节再回到整体",
+      "triggers": [
+        "细节",
+        "局部",
+        "放大",
+        "这一处",
+        "全貌"
+      ],
+      "shotcraft_candidates": [
+        "graze-face-tour",
+        "depth-layer-moves"
+      ],
+      "carrier": "高分辨率真实对象与有效细节ROI",
+      "sequence": [
+        "完整对象建立方向感",
+        "镜头进入相关细节",
+        "关键词处局部标注",
+        "退出到整体说明细节归属"
+      ],
+      "optimization": "放大不能超出素材有效清晰度；文字平面不做强透视",
+      "generation_rule": "可生成说明性物件照片，需同一物件视角一致",
+      "status": "DESIGN_RECIPE",
+      "hf_adaptation_status": "NOT_IMPLEMENTED",
+      "origin": "Project-authored planning; no Talkcraft implementation bundled"
+    },
+    {
+      "id": "replace-object",
+      "title": "替代关系与状态接管",
+      "triggers": [
+        "替代",
+        "换成",
+        "代替",
+        "取代",
+        "改成"
+      ],
+      "shotcraft_candidates": [
+        "bottom-push-stack-wipe",
+        "morph-from-primitive"
+      ],
+      "carrier": "被替换对象和接管对象的真实载体",
+      "sequence": [
+        "展示旧对象与功能位置",
+        "新对象进入但不提前隐藏旧对象",
+        "替代词处接管同一功能位",
+        "保留差异说明并清理旧状态"
+      ],
+      "optimization": "对象身份与用途明确；不要只换标题或套无关变形",
+      "generation_rule": "可生成通用对象照片，品牌与能力仍需真实依据",
+      "status": "DESIGN_RECIPE",
+      "hf_adaptation_status": "NOT_IMPLEMENTED",
+      "origin": "Project-authored planning; no Talkcraft implementation bundled"
+    },
+    {
+      "id": "parallel-branches",
+      "title": "一份输入产生多种结果",
+      "triggers": [
+        "分别",
+        "多种",
+        "同时",
+        "分成",
+        "拆分",
+        "多个版本"
+      ],
+      "shotcraft_candidates": [
+        "integration-hub-map",
+        "product-card-progressive-assemble"
+      ],
+      "carrier": "真实共享输入和各自结果载体",
+      "sequence": [
+        "显示共同输入",
+        "第一分支形成具体结果",
+        "第二分支出现并说明差异",
+        "收束到当前口播关注的分支"
+      ],
+      "optimization": "依口播分支建立，不从第一帧全部铺满；连接不代表未经证实的因果",
+      "generation_rule": "示意输出需标记，不能冒充工具实际产出",
+      "status": "DESIGN_RECIPE",
+      "hf_adaptation_status": "NOT_IMPLEMENTED",
+      "origin": "Project-authored planning; no Talkcraft implementation bundled"
+    },
+    {
+      "id": "focus-transfer",
+      "title": "对象之间交接阅读焦点",
+      "triggers": [
+        "重点",
+        "转向",
+        "另一方面",
+        "再看",
+        "关注"
+      ],
+      "shotcraft_candidates": [
+        "scanline-annotate-focus",
+        "shot-transitions"
+      ],
+      "carrier": "两个相关真实对象与明确阅读顺序",
+      "sequence": [
+        "第一对象建立上下文",
+        "第二对象按转折词出现",
+        "焦点和标注交给第二对象",
+        "并置收束或回到人物"
+      ],
+      "optimization": "模糊只用于非阅读背景；结论不能被虚化或提前露出",
+      "generation_rule": "两对象可用独立内容层生成，保持光源与视角一致",
+      "status": "DESIGN_RECIPE",
+      "hf_adaptation_status": "NOT_IMPLEMENTED",
+      "origin": "Project-authored planning; no Talkcraft implementation bundled"
+    }
+  ]
+}

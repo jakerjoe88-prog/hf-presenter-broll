@@ -1,0 +1,105 @@
+{
+  "schema_version": "2.0",
+  "beats": [
+    {
+      "beat_id": "b1",
+      "utterance": "把这些资料整理成教程",
+      "purpose": "说明输入怎样形成可复用成果",
+      "recipe_id": "materials-to-result",
+      "carrier": "实际资料、工作区与教程播放器",
+      "anchor_ids": [
+        "a_input",
+        "a_result"
+      ],
+      "reading_focus": "当前操作与产物",
+      "safe_zones": {
+        "face": [
+          0.35,
+          0.1,
+          0.65,
+          0.75
+        ],
+        "subtitles": [
+          0.1,
+          0.85,
+          0.9,
+          0.98
+        ]
+      },
+      "presenter_handoff": "内容建立时让位，结果讲完回归",
+      "reference_optimization": "保留输入到结果关系；换成真实工作区并跟随口播逐项传递",
+      "events": [
+        "选择输入",
+        "工作区接收",
+        "形成教程",
+        "回到人物"
+      ],
+      "assets": [
+        {
+          "id": "workspace",
+          "kind": "CAPTURE",
+          "role": "EVIDENCE",
+          "source": "待提供实际录屏",
+          "path": null,
+          "status": "MISSING"
+        },
+        {
+          "id": "desk",
+          "kind": "GENERATE",
+          "role": "ILLUSTRATION",
+          "source": "待生成说明性环境",
+          "path": null,
+          "status": "MISSING",
+          "generation": {
+            "referent": "教程制作桌面环境",
+            "composition": "主体左侧，人物与字幕区域留白",
+            "layers": [
+              "背景照片"
+            ],
+            "motion_room": "为镜头推近保留边缘",
+            "native_overlays": [
+              "中文",
+              "控件"
+            ],
+            "prompt": "按实际项目比例补全提示词后生成"
+          }
+        }
+      ],
+      "semantic": {
+        "source_span": {
+          "start": 0,
+          "end": 10
+        },
+        "function": "STEP",
+        "viewer_goal": "看到资料怎样进入工作区并形成教程",
+        "topic_relation": "展示本片核心的输入到成果关系",
+        "referents": []
+      },
+      "broll_decision": {
+        "mode": "CONTENT_TAKEOVER",
+        "purpose": "PROCESS",
+        "reason": "工作区过程需要充分阅读空间",
+        "subject": "资料与教程工作区",
+        "action": "输入资料后形成可读教程",
+        "expected_change": "从待整理资料到可复用教程",
+        "asset_ids": [
+          "workspace"
+        ],
+        "frames": {
+          "start": 0,
+          "end": 180
+        },
+        "min_read_frames": 30
+      }
+    }
+  ],
+  "narration": {
+    "path": "visual-plan-example-transcript.txt",
+    "sha256": "cc78e1fa272d8eae71352c6f26fd22582cb2d4a6f2bb3a2a71f45b5761460b37",
+    "topic": "把资料整理为教程",
+    "topic_span": {
+      "start": 0,
+      "end": 10
+    }
+  }
+}

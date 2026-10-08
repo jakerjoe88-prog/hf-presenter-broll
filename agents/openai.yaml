@@ -1,0 +1,4 @@
+interface:
+  display_name: "口播 B-roll · HyperFrames"
+  short_description: "为剪好口播选择视觉风格，制作真实素材与语义动效并验收成片"
+  default_prompt: "请用 $hf-presenter-broll 增强这段已剪口播，保持原声、剪点、比例和时长；沿用我已确认的风格，否则先智能匹配或让我选择，再给完整制作任务审查。"

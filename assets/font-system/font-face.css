@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "HF Source Han Serif SC";
+  src: url("./fonts/SourceHanSerifSC-Heavy.otf") format("opentype");
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "HF IBM Plex Sans SC";
+  src: url("./fonts/IBMPlexSansSC-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "HF IBM Plex Sans SC";
+  src: url("./fonts/IBMPlexSansSC-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "HF IBM Plex Sans SC";
+  src: url("./fonts/IBMPlexSansSC-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "HF IBM Plex Mono";
+  src: url("./fonts/IBMPlexMono-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "HF IBM Plex Mono";
+  src: url("./fonts/IBMPlexMono-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+}
+
+:root {
+  --hf-font-display: "HF Source Han Serif SC", "Source Han Serif SC", "Noto Serif CJK SC", serif;
+  --hf-font-body: "HF IBM Plex Sans SC", "IBM Plex Sans SC", "Noto Sans CJK SC", sans-serif;
+  --hf-font-data: "HF IBM Plex Mono", "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  --hf-font-accent-latin: "HF IBM Plex Sans SC", sans-serif;
+}
+
+.hf-type-display {
+  font-family: var(--hf-font-display);
+  font-weight: 900;
+}
+
+.hf-type-body {
+  font-family: var(--hf-font-body);
+  font-weight: 500;
+}
+
+.hf-type-emphasis {
+  font-family: var(--hf-font-body);
+  font-weight: 700;
+}
+
+.hf-type-data {
+  font-family: var(--hf-font-data);
+  font-variant-numeric: tabular-nums lining-nums;
+  font-weight: 500;
+}
+
+.hf-type-accent-latin {
+  font-family: var(--hf-font-accent-latin);
+  font-weight: 400;
+}

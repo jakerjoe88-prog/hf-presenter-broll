@@ -1,0 +1,30 @@
+{
+  "version": "1.5.0",
+  "date": "2026-10-07",
+  "workflow": "hf-video-production-workflow local snapshot + presenter project contracts",
+  "style": "portable seven-style registry; presenter-evidence-cinematic-broll v0.3 remains talking-head default",
+  "shotcraft": {
+    "repository": "https://github.com/Vincentwei1021/video-shotcraft",
+    "commit": "0d6f0b57f0d4d6700761644c07f7ef03c3e50234",
+    "license": "Apache-2.0",
+    "scope": "core60 source and full152 metadata; demo media omitted"
+  },
+  "fonts": {
+    "Source Han Serif SC": "SIL OFL 1.1",
+    "IBM Plex": "SIL OFL 1.1",
+    "Striverx": "NOT_BUNDLED"
+  },
+  "talkcraft_reference": {
+    "commit": "ccb8a571f4bd620b5588bef4b264b5120f5042fc",
+    "use": "design research only",
+    "code_bundled": false,
+    "license": "PolyForm Noncommercial 1.0.0"
+  },
+  "onetake": {
+    "repository": "https://github.com/feitangyuan/onetake",
+    "commit": "36072d36e777a7de4604eacaa110342f80ae76eb",
+    "license": "PolyForm Noncommercial 1.0.0",
+    "code_bundled": false,
+    "scope": "optional external noncommercial content plate engine; package contract tested, project samples separately reported"
+  }
+}
